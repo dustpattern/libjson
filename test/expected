@@ -1,0 +1,244 @@
+7a641d91: error: Invalid argument
+f55a9156: error: Invalid argument
+3025fa52: error: Invalid argument
+624d511e: error: Invalid argument
+79a88562: error: Invalid argument
+b43ae774: error: Invalid argument
+b740a298: error: Invalid argument
+5580b330: error: Invalid argument
+3a5bb9bc: error: Invalid argument
+b9c3d98f: error: Invalid argument
+b92ff4c2: error: Invalid argument
+ddcb27bc: ok
+{
+    "x": "1"
+}
+6864e671: ok
+{
+    "x": "1"
+}
+b3702dd8: ok
+{
+    "x": "1"
+}
+bf1ac9b7: ok
+{
+    "x": "1",
+    "y": "2"
+}
+66afbfd8: ok
+{
+    "x": "1",
+    "y": "2"
+}
+fa458ac9: ok
+{
+    "x": "1",
+    "y": "2"
+}
+b10c6f54: ok
+{
+    "foo": "a",
+    "bar": "b"
+}
+0d8babfa: ok
+{
+    "foo": "a",
+    "bar": [
+        "1"
+    ]
+}
+b648fb24: ok
+{
+    "foo": "a",
+    "bar": [
+        "1",
+        "2",
+        "3",
+        "4"
+    ]
+}
+a50d938b: ok
+{
+    "foo": "a",
+    "bar": [
+        "1",
+        "2"
+    ]
+}
+8535e6e0: ok
+{
+    "foo": "a",
+    "bar": [
+        "1",
+        {
+            "x": "1",
+            "y": "2"
+        },
+        "3",
+        "4"
+    ]
+}
+00942f06: ok
+{
+    "test": "x"
+}
+41593cc5: ok
+{
+    "_test": "x"
+}
+31457e98: ok
+{
+    "__test": "x"
+}
+eb08bee4: ok
+{
+    "__test_1": "x"
+}
+0dc05728: ok
+{
+    "abc0": "x"
+}
+0d42f744: error: Invalid argument
+f13f7b1d: ok
+{
+    "0": "x"
+}
+1ff27b41: ok
+{
+    "123": "x"
+}
+224e0215: ok
+{
+    "foo": "bar"
+}
+6c2bc37d: ok
+{
+    "hello world": "bar"
+}
+0c348644: ok
+{
+    "hello world": "foo bar"
+}
+a8013767: ok
+{
+    "hello world": "foo "bar"
+}
+2f40cb81: error: Invalid argument
+64b2f1cb: error: Invalid argument
+379df015: error: Invalid argument
+83cb7be2: ok
+{
+    "foo": "012345678901234567890123456789012345678901234567890123456789012"
+}
+aa922bf2: ok
+{
+    "foo": "a12345678901234567890123456789012345678901234567890123456789012"
+}
+a54f32db: error: Invalid argument
+35c8fc21: error: Invalid argument
+3aaf8a94: ok
+{
+    "x": "0"
+}
+af00c05d: error: Invalid argument
+d3e1d6c3: ok
+{
+    "x": "1"
+}
+7a7a348b: ok
+{
+    "x": "12"
+}
+da422f25: ok
+{
+    "x": "0.1"
+}
+ea7aed17: ok
+{
+    "x": "0.123"
+}
+335b0d45: error: Invalid argument
+f5d3f5ee: error: Invalid argument
+abf03b26: error: Invalid argument
+8756c16f: error: Invalid argument
+f7ff22cb: error: Invalid argument
+8febf389: error: Invalid argument
+45ec065f: error: Invalid argument
+da422f25: ok
+{
+    "x": "1.1"
+}
+ea7aed17: ok
+{
+    "x": "1.123"
+}
+335b0d45: error: Invalid argument
+f5d3f5ee: error: Invalid argument
+abf03b26: error: Invalid argument
+8756c16f: error: Invalid argument
+f7ff22cb: error: Invalid argument
+d123475a: ok
+{
+    "x": "12.1"
+}
+f36010cc: error: Invalid argument
+0c350fb9: ok
+{
+}
+d76b246d: ok
+{
+    "v": [
+    ]
+}
+f208cb30: error: Invalid argument
+6eeef86f: ok
+{
+    "x": [
+    ],
+    "y": {
+    }
+}
+321fe338: ok
+{
+    "a": [
+    ],
+    "b": {
+        "c": [
+        ]
+    },
+    "d": [
+        [
+        ],
+        [
+        ],
+        [
+        ]
+    ]
+}
+76c526a0: ok
+{
+    "x": [
+        {
+        },
+        {
+        },
+        {
+        }
+    ]
+}
+76c526a0: ok
+{
+    "x": [
+        {
+        },
+        [
+        ],
+        {
+        },
+        [
+        ],
+        {
+        }
+    ]
+}

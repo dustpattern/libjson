@@ -1,0 +1,39 @@
+#
+# Makefile.in
+#
+# Simple JSON parser.
+#
+# https://github.com/e03213ac/libjson
+#
+# This work belongs to the Public Domain. Everyone is free to use, modify,
+# republish, sell or give away this work without prior consent from
+# anybody.
+#
+# This software is provided on an "AS IS" basis, without warranty of any
+# kind. Use at your own risk! Under no circumstances shall the author(s)
+# or contributor(s) be liable for damages resulting directly or indirectly
+# from the use or non-use of this documentation.
+#
+
+LIBJSON_DIR    := $(dir $(lastword $(MAKEFILE_LIST)))
+LIBJSON_INCDIR := $(LIBJSON_DIR)include/
+LIBJSON_SRCDIR := $(LIBJSON_DIR)src/
+LIBJSON_CFILES := $(wildcard $(LIBJSON_SRCDIR)*.c)
+LIBJSON_CFILES := $(filter-out $(LIBJSON_SRCDIR)json_test.c,$(LIBJSON_CFILES))
+LIBJSON_HFILES := $(wildcard $(LIBJSON_SRCDIR)*.h $(LIBJSON_INCDIR)*.h)
+LIBJSON_OFILES := $(LIBJSON_CFILES:.c=.o)
+LIBJSON        := $(LIBJSON_DIR)libjson.a
+
+$(LIBJSON): $(LIBJSON_OFILES)
+	$(AR) rcs $(@) $(^)
+
+$(LIBJSON_OFILES): CFLAGS += -std=gnu99 -D_GNU_SOURCE
+$(LIBJSON_OFILES): CFLAGS += -iquote$(LIBJSON_SRCDIR) -iquote$(LIBJSON_INCDIR)
+$(LIBJSON_OFILES): $(LIBJSON_HFILES)
+
+.PHONY: clean
+.PHONY: libjson_clean
+clean: libjson_clean
+libjson_clean:
+	rm -f $(LIBJSON_DIR)*.a
+	rm -f $(LIBJSON_SRCDIR)*.o
